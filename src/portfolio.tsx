@@ -2,11 +2,20 @@ import React from "react";
 
 const Portfolio: React.FC = () => {
   const skills = [
-    { name: "HTML", level: 70 },
-    { name: "CSS", level: 65 },
+    { name: "Java", level: 70 },
+    { name: "Spring Boot", level: 70 },
+    { name: "SQL", level: 75 },
+    { name: "REST APIs", level: 65 },
+    { name: "AWS", level: 50 },
+    { name: "GCP", level: 45 },
+    { name: "Python", level: 45 },
+    { name: "Docker", level: 50 },
+    { name: "Express", level: 50 },
     { name: "JavaScript", level: 50 },
     { name: "React", level: 45 },
-    { name: "TypeScript", level: 50 },
+    { name: "Next JS", level: 35 },
+    { name: "TypeScript", level: 45 },
+    { name: "Tailwind CSS", level: 35 },
   ];
 
   return (
