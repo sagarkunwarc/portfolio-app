@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 const Portfolio: React.FC = () => {
-  const [isDarkMode] = useState(true);
+  const [isDarkMode, setIsDarkMode] = useState(true);
 
   useEffect(() => {
     if (isDarkMode) {
@@ -52,7 +52,11 @@ const Portfolio: React.FC = () => {
           <p className="text-xl mb-6">Full-Stack Developer</p>
           <div className="flex justify-center gap-4">
             <button className="border border-blue-500 hover:bg-blue-500 transition-colors duration-300 px-6 py-2 rounded">
-              <a href="https://github.com/sagarkunwarc" target="_blank">
+              <a
+                href="https://github.com/sagarkunwarc"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 GitHub
               </a>
             </button>
@@ -60,9 +64,17 @@ const Portfolio: React.FC = () => {
               <a
                 href="https://www.linkedin.com/in/sagarkunwar/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Linkedin
               </a>
+            </button>
+            {/* Light/Dark Mode Toggle */}
+            <button
+              onClick={() => setIsDarkMode(!isDarkMode)}
+              className="bg-gray-300 hover:bg-gray-400 transition-colors duration-300 px-4 py-2 rounded"
+            >
+              {isDarkMode ? "Light Mode" : "Dark Mode"}
             </button>
           </div>
         </div>
@@ -135,6 +147,7 @@ const Portfolio: React.FC = () => {
                 <a
                   href={project.link}
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="text-blue-500 hover:text-blue-700"
                 >
                   Live Demo
@@ -142,6 +155,7 @@ const Portfolio: React.FC = () => {
                 <a
                   href={project.github}
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="text-blue-500 hover:text-blue-700"
                 >
                   GitHub
@@ -149,32 +163,6 @@ const Portfolio: React.FC = () => {
               </div>
             </div>
           ))}
-        </div>
-      </section>
-
-      {/* Contact Section */}
-      <section className="py-20">
-        <h2 className="text-3xl font-bold mb-8">Get In Touch</h2>
-        <div className="max-w-2xl mx-auto">
-          <form className="space-y-4">
-            <input
-              type="name"
-              placeholder="Your Name"
-              className="w-full p-2 border rounded"
-            />
-            <input
-              type="email"
-              placeholder="Your Email"
-              className="w-full p-2 border rounded"
-            />
-            <textarea
-              placeholder="Your Message"
-              className="w-full p-2 border rounded h-32"
-            ></textarea>
-            <button className="bg-blue-500 hover:bg-blue-700 text-white px-6 py-2 rounded">
-              Send Message
-            </button>
-          </form>
         </div>
       </section>
     </div>
