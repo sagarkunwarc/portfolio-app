@@ -30,16 +30,16 @@ const Portfolio: React.FC = () => {
     { name: "Tailwind CSS", level: 35 },
   ];
 
-  const projects = [
-    {
-      title: "Project 1",
-      description: "Description of project 1",
-      technologies: ["React", "Node.js", "MongoDB"],
-      link: "https://project1.com",
-      github: "https://github.com/username/project1",
-    },
-    // Add more projects
-  ];
+  // const projects = [
+  //   {
+  //     title: "Project 1",
+  //     description: "Description of project 1",
+  //     technologies: ["React", "Node.js", "MongoDB"],
+  //     link: "https://project1.com",
+  //     github: "https://github.com/username/project1",
+  //   },
+  //   // Add more projects
+  // ];
 
   return (
     <div className={`container mx-auto px-4 py-8`}>
@@ -123,7 +123,7 @@ const Portfolio: React.FC = () => {
       </section>
 
       {/* Projects Section */}
-      <section className="py-20">
+      {/* <section className="py-20">
         <h2 className="text-3xl font-bold mb-8">Featured Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
@@ -164,7 +164,7 @@ const Portfolio: React.FC = () => {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };
