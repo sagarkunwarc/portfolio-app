@@ -49,7 +49,7 @@ const Portfolio: React.FC = () => {
           <h1 className="text-6xl font-bold mb-4 animate-fade-in">
             Sagar Kunwar
           </h1>
-          <p className="text-xl mb-6">Full-Stack Developer</p>
+          <p className="text-xl mb-6">Software Engineer</p>
           <div className="flex justify-center gap-4">
             <button className="border border-blue-500 hover:bg-blue-500 transition-colors duration-300 px-6 py-2 rounded">
               <a
@@ -86,8 +86,8 @@ const Portfolio: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
             <p className="text-lg leading-relaxed">
-              Passionate full-stack developer with expertise in building
-              scalable web applications on Java, Spring Boot and React.
+              Passionate full-stack engineer with expertise in building
+              scalable web applications with Java, Spring Boot, Node JS with Express, Next JS lately and React on frontend.
             </p>
           </div>
           <div className="grid grid-cols-2 gap-4">
