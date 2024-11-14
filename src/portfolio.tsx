@@ -51,7 +51,7 @@ const Portfolio: React.FC = () => {
           </h1>
           <p className="text-xl mb-6">Software Engineer</p>
           <div className="flex justify-center gap-4">
-            <button className="border border-blue-500 hover:bg-blue-500 transition-colors duration-300 px-6 py-2 rounded">
+            <button className="bg-blue-500 hover:bg-blue-700 transition-colors duration-300 px-6 py-2 rounded">
               <a
                 href="https://github.com/sagarkunwarc"
                 target="_blank"
@@ -67,6 +67,15 @@ const Portfolio: React.FC = () => {
                 rel="noopener noreferrer"
               >
                 Linkedin
+              </a>
+            </button>
+            <button className="bg-blue-500 hover:bg-blue-700 transition-colors duration-300 px-6 py-2 rounded">
+              <a
+                href="https://partner.cloudskillsboost.google/public_profiles/f0d3c4be-0bcb-43a5-8665-bbdaa63b022e"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Google Cloud Skills Boost
               </a>
             </button>
             {/* Light/Dark Mode Toggle */}
@@ -86,8 +95,9 @@ const Portfolio: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
             <p className="text-lg leading-relaxed">
-              Passionate full-stack engineer with expertise in building
-              scalable web applications with Java, Spring Boot, Node JS with Express, Next JS lately and React on frontend.
+              Passionate full-stack engineer with expertise in building scalable
+              web applications with Java, Spring Boot, Node JS with Express,
+              Next JS lately and React on frontend.
             </p>
           </div>
           <div className="grid grid-cols-2 gap-4">
