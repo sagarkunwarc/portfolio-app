@@ -33,7 +33,7 @@ const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode }) => {
               <FaLinkedin className="text-2xl" />
             </a>
             <a href="https://partner.cloudskillsboost.google/public_profiles/f0d3c4be-0bcb-43a5-8665-bbdaa63b022e"
-             target="_blank" rel="noopener noreferrer" aria-label="Twitter Profile">
+             target="_blank" rel="noopener noreferrer" aria-label="Google Cloud Profile">
               <FaGoogle className="text-2xl" />
             </a>
           </div>

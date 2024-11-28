@@ -44,20 +44,20 @@ const Skills: React.FC = () => {
 
   return (
     <section className="mb-16" data-aos="fade-up">
-      <h2 className="text-3xl font-bold mb-8 text-lef">Skills</h2>
+      <h2 className="text-3xl font-bold mb-8 text-left dark:text-white">Skills</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {skills.map((category) => (
           <div
             key={category.category}
             className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6"
           >
-            <h3 className="text-xl font-semibold mb-4">{category.category}</h3>
+            <h3 className="text-xl font-semibold mb-4 dark:text-white">{category.category}</h3>
             <ul className="space-y-4">
               {category.items.map((skill) => (
                 <li key={skill.name}>
                   <div className="flex justify-between mb-1">
-                    <span className="font-medium">{skill.name}</span>
-                    <span className="text-sm text-gray-500">
+                    <span className="font-medium dark:text-gray-300">{skill.name}</span>
+                    <span className="text-sm text-gray-500 dark:text-gray-400">
                       {skill.level}%
                     </span>
                   </div>
@@ -78,3 +78,4 @@ const Skills: React.FC = () => {
 };
 
 export default Skills;
+

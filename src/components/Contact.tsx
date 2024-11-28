@@ -27,11 +27,11 @@ const Contact: React.FC = () => {
 
   return (
     <section id="contact" className="mb-16">
-      <h2 className="text-3xl font-bold mb-4">Contact Me</h2>
+      <h2 className="text-3xl font-bold mb-4 dark:text-white">Contact Me</h2>
       <div className="dark:bg-gray-800 p-6 rounded-lg">
         <form onSubmit={handleSubmit} className="max-w-lg mb-4">
           <div className="mb-4">
-            <label htmlFor="name" className="block text-sm font-medium mb-2">
+            <label htmlFor="name" className="block text-sm font-medium mb-2 dark:text-gray-300">
               Name
             </label>
             <input
@@ -44,7 +44,7 @@ const Contact: React.FC = () => {
             />
           </div>
           <div className="mb-4">
-            <label htmlFor="email" className="block text-sm font-medium mb-2">
+            <label htmlFor="email" className="block text-sm font-medium mb-2 dark:text-gray-300">
               Email
             </label>
             <input
@@ -57,7 +57,7 @@ const Contact: React.FC = () => {
             />
           </div>
           <div className="mb-4">
-            <label htmlFor="message" className="block text-sm font-medium mb-2">
+            <label htmlFor="message" className="block text-sm font-medium mb-2 dark:text-gray-300">
               Message
             </label>
             <textarea
