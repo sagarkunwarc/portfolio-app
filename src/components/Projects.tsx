@@ -23,26 +23,28 @@ const projects: Project[] = [
     technologies: ["Vue.js", "Firebase", "Tailwind CSS"],
     link: "https://github.com/yourusername/project2",
   },
-  // Add more projects as needed
 ];
 
 const Projects: React.FC = () => {
   return (
     <section id="projects" className="mb-16">
-      <h2 className="text-3xl font-bold mb-4 dark:text-white">Projects</h2>
+      <h2 className="text-3xl font-bold mb-4 dark:text-black">Projects</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {projects.map((project) => (
           <div
             key={project.id}
             className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md"
           >
-            <h3 className="text-xl font-semibold mb-2 dark:text-white">{project.title}</h3>
+            <h3 className="text-xl font-semibold mb-2 dark:text-white">
+              {project.title}
+            </h3>
             <p className="mb-4 dark:text-gray-300">{project.description}</p>
             <div className="mb-4">
               {project.technologies.map((tech) => (
                 <span
                   key={tech}
-                  className="inline-block bg-gray-200 dark:bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2 dark:text-gray-300"
+                  className="inline-block bg-gray-200 dark:bg-gray-700 rounded-full px-3 py-1 text-sm font-semibold 
+                  mr-2 mb-2 dark:text-gray-300"
                 >
                   {tech}
                 </span>
@@ -64,4 +66,3 @@ const Projects: React.FC = () => {
 };
 
 export default Projects;
-

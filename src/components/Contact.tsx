@@ -12,9 +12,9 @@ const Contact: React.FC = () => {
     e.preventDefault();
     // Here you would typically send the form data to a server
     console.log("Form submitted:", { name, email, message });
-    
+
     // Simulate sending data to a server
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    await new Promise((resolve) => setTimeout(resolve, 1000));
 
     // Display the submitted message
     setSubmittedMessage(`Message from ${name} (${email}): ${message}`);
@@ -27,11 +27,14 @@ const Contact: React.FC = () => {
 
   return (
     <section id="contact" className="mb-16">
-      <h2 className="text-3xl font-bold mb-4 dark:text-white">Contact Me</h2>
+      <h2 className="text-3xl font-bold mb-4 dark:text-black">Contact Me</h2>
       <div className="dark:bg-gray-800 p-6 rounded-lg">
         <form onSubmit={handleSubmit} className="max-w-lg mb-4">
           <div className="mb-4">
-            <label htmlFor="name" className="block text-sm font-medium mb-2 dark:text-gray-300">
+            <label
+              htmlFor="name"
+              className="block text-sm font-medium mb-2 dark:text-gray-300"
+            >
               Name
             </label>
             <input
@@ -40,11 +43,15 @@ const Contact: React.FC = () => {
               value={name}
               onChange={(e) => setName(e.target.value)}
               required
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900 dark:text-white bg-white dark:bg-gray-700"
+              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 
+              focus:ring-blue-500 text-gray-900 dark:text-white bg-white dark:bg-gray-700"
             />
           </div>
           <div className="mb-4">
-            <label htmlFor="email" className="block text-sm font-medium mb-2 dark:text-gray-300">
+            <label
+              htmlFor="email"
+              className="block text-sm font-medium mb-2 dark:text-gray-300"
+            >
               Email
             </label>
             <input
@@ -53,11 +60,15 @@ const Contact: React.FC = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900 dark:text-white bg-white dark:bg-gray-700"
+              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 
+              focus:ring-blue-500 text-gray-900 dark:text-white bg-white dark:bg-gray-700"
             />
           </div>
           <div className="mb-4">
-            <label htmlFor="message" className="block text-sm font-medium mb-2 dark:text-gray-300">
+            <label
+              htmlFor="message"
+              className="block text-sm font-medium mb-2 dark:text-gray-300"
+            >
               Message
             </label>
             <textarea
@@ -66,12 +77,14 @@ const Contact: React.FC = () => {
               onChange={(e) => setMessage(e.target.value)}
               required
               rows={4}
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900 dark:text-white bg-white dark:bg-gray-700"
+              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 
+              focus:ring-blue-500 text-gray-900 dark:text-white bg-white dark:bg-gray-700"
             ></textarea>
           </div>
           <button
             type="submit"
-            className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:bg-blue-500 dark:hover:bg-blue-600"
+            className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2
+             focus:ring-blue-500 focus:ring-offset-2 dark:bg-blue-500 dark:hover:bg-blue-600"
           >
             Send Message
           </button>
@@ -88,4 +101,3 @@ const Contact: React.FC = () => {
 };
 
 export default Contact;
-
