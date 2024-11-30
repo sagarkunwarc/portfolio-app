@@ -1,12 +1,7 @@
 import React from "react";
 import { FaGithub, FaGoogle, FaLinkedin } from "react-icons/fa";
 
-interface HeaderProps {
-  darkMode: boolean;
-  toggleDarkMode: () => void;
-}
-
-const Header: React.FC<HeaderProps> = () => {
+const Header: React.FC = () => {
   return (
     <header className="bg-white text-gray-800 py-4">
       <div className="container mx-auto px-4 flex justify-between items-center">

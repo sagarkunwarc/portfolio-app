@@ -11,12 +11,7 @@ const App: React.FC = () => {
     <div className="min-h-screen">
       <div className="bg-white text-gray-900">
         <main className="container mx-auto px-4 py-8">
-          <Header
-            darkMode={false}
-            toggleDarkMode={function (): void {
-              throw new Error("Function not implemented.");
-            }}
-          />
+          <Header />
           <About />
           <Projects />
           <Skills />
